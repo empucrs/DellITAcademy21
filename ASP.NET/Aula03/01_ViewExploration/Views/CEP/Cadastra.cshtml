@@ -1,0 +1,13 @@
+@model CEPViewModel
+
+<form asp-controller="CEP" asp-action="cadastra" method="post">
+
+    <label asp-for="@Model.CEP"/> <input asp-for="@Model.CEP"/>
+    <label asp-for="@Model.Estado"/> <input asp-for="@Model.Estado"/>
+    <label asp-for="@Model.Cidade"/> <input asp-for="@Model.Cidade"/>
+    <label asp-for="@Model.Bairro"/> <input asp-for="@Model.Bairro"/>
+    <label asp-for="@Model.Logradouro"/> <input asp-for="@Model.Logradouro"/>
+
+    <input type="submit" value="Salvar"/>
+
+</form>

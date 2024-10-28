@@ -28,6 +28,7 @@ public class Program
 
         app.MapControllerRoute(
             name: "default",
+            //http://localhost:porta/controlador/acao/nome="edson moreno"&idade=48
             pattern: "{controller=Home}/{action=Index}/{id?}");
 
         app.Run();

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 using _01_webproj.Models;
 
 public class EdsonController : Controller
@@ -28,7 +29,9 @@ public class EdsonController : Controller
         }
     }
 
+    //https://localhost:7054/Edson/Acao06?nome=Edson%20Moreno&idade=48
     public string Acao06(string nome, int idade){
+        if(!ModelState.IsValid) Console.WriteLine("Há uma falha no modelo enviado");
         return $"Nome:{nome}; idade:{idade}";
     }
 

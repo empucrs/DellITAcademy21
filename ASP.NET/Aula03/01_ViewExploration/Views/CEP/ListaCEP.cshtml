@@ -1,0 +1,26 @@
+@{
+    var lista = ViewBag.listaDeCEPs;
+    foreach(var item in lista){
+        Console.WriteLine("cep = "+ item.CEP);
+    }
+}
+
+<table>
+    <tr>
+        <td>CEP</td>
+        <td>Estado</td>
+        <td>Cidade</td>
+        <td>Bairro</td>
+        <td>Logradouro</td>
+    </tr>
+
+    @foreach(var cep in lista){
+        <tr>
+            <td>@cep.CEP</td>
+            <td>@cep.Estado</td>
+            <td>@cep.Cidade</td>
+            <td>@cep.Bairro</td>
+            <td>@cep.Logradouro</td>
+        </tr>
+    }
+</table>

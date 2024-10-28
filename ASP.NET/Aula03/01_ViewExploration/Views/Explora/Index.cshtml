@@ -1,0 +1,17 @@
+﻿@*
+ Aqui eu posso adicionar o comentário que eu quiser
+*@
+
+@{
+    // mas para fazer comentários de linha ou 
+    /*
+      de bloco, eu preciso estar num bloco razor
+    */
+}
+
+<h1>Nome @ViewData["nome"]</h1>
+<h2>titulo @ViewData["titulo"]</h2>
+<h3>outra informação @ViewData["outra"]</h3>
+<h3>agora com view bag @ViewBag.umExemplo</h3>
+<h3>Data @DateTime.Now.ToShortDateString() </h3>
+
